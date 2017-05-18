@@ -1,7 +1,7 @@
 <?php
-	require_once "../connexionDB.php";
-	require_once "../includes/verificationSession.php";
-	require_once "../includes/functions.php";
+	require_once "../../connexionDB.php";
+	require_once "../../includes/verificationSession.php";
+	require_once "../../includes/functions.php";
 	
 	$nom_faculte = $_GET['nom_faculte'];
 	$nom_dept = $_GET['nom_dept'];

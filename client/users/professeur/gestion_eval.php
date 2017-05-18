@@ -1,8 +1,8 @@
 <?php
-	require_once "../../includes/header.html";
-	require "../../connexionDB.php";
-	require "../../includes/functions.php";
-	require_once "../../includes/verificationSession.php";
+	require_once "../../../includes/header.html";
+	require "../../../connexionDB.php";
+	require "../../../includes/functions.php";
+	require_once "../../../includes/verificationSession.php";
 ?>
 	<script type="text/javascript" src ="../../Scripts/functions.js"></script>
 	<title>Gestion des evaluations</title>
@@ -78,6 +78,6 @@
 	
 
 <?php
-	require_once "../../includes/footer.html";
+	require_once "../../../includes/footer.html";
 ?>
 

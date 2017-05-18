@@ -27,7 +27,7 @@ switch ($statut) {
 		
 		break; 
 	case '5':
-		exit ( header("Location: /admin/index1.php"));
+		exit ( header("Location: /admin/index.php"));
 		
 		break;
 

@@ -1,6 +1,5 @@
 <?php
-	require_once "../../../connexionDB.php";
-	require_once "../../../includes/functions.php";
+	require_once "requiredFiles.php";
 	
 	$data = get_user_data($conn, $_SESSION['UserData']['username']);
 	foreach ($data as $row) {

@@ -1,5 +1,5 @@
 <?php
-	require_once "./includes/header.html";
+	require_once "../includes/header.html";
 ?>
 	<title>Ajout d'un utilisateur</title>
 

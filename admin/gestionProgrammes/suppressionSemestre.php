@@ -1,7 +1,7 @@
 <?php
-	require_once "../connexionDB.php";
-	require_once "../includes/verificationSession.php";
-	require_once "../includes/functions.php";
+	require_once "../../connexionDB.php";
+	require_once "../../includes/verificationSession.php";
+	require_once "../../includes/functions.php";
 	
 	
 	$id_semestre = $_GET['id_semestre'];

@@ -1,5 +1,5 @@
 <?php
-	require_once "./includes/header.html";
+	require_once "../includes/header.html";
 ?>
 	<title>Gestion des semestres UDM</title>
 	<script type="text/javascript" src ="./Scripts/functionsSemestre.js"></script>

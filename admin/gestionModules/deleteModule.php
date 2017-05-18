@@ -1,7 +1,7 @@
 <?php
-	require_once "../connexionDB.php";
-	require_once "../includes/verificationSession.php";
-	require_once "../includes/functions.php";
+	require_once "../../connexionDB.php";
+	require_once "../../includes/verificationSession.php";
+	require_once "../../includes/functions.php";
 	
 	
 	$id_module_suppr = $_GET['id_module_suppr'];

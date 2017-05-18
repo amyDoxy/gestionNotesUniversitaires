@@ -1,7 +1,7 @@
 <?php
-	require_once "./includes/header.html";
-	require_once "./connexionDB.php";
-	require_once "./includes/functions.php";
+	require_once "../includes/header.html";
+	require_once "../connexionDB.php";
+	require_once "../includes/functions.php";
 
 ?>
 	<title>Ajout d'un utilisateur</title>

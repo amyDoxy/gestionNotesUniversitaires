@@ -1,7 +1,6 @@
 <?php
 	//Recuperation des types d'evaluation dans la base de donnees
-	require_once "../../../connexionDB.php";
-	require_once "../../../includes/functions.php";
+	require_once "requiredFiles.php";
 	header("Content-Type:text/xml");
 	$moduleSelected = $_GET['moduleSelected'];
 	$table1 = "UDM_evaluation";

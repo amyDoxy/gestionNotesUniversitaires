@@ -1,8 +1,5 @@
 <?php
-	require_once "../../../connexionDB.php";
-	require_once "../../../includes/verificationSession.php";
-	require_once "../../../includes/functions.php";
-	
+	require_once "requiredFiles.php";
 	
 	
 	$identifiant_eval = $_GET['identifiant_eval'];

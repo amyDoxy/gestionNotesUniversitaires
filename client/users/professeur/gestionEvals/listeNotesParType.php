@@ -1,6 +1,5 @@
 <?php
-	require_once "../../../verification.php";
-	require_once "../../../includes/functions.php";
+	require_once "requiredFiles.php";
 	
 	
 	$data = get_user_data($conn, $_SESSION['UserData']['username']);

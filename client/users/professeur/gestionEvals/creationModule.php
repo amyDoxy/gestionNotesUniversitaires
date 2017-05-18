@@ -1,7 +1,7 @@
 <?php
-	require_once "../../connexionDB.php";
-	require_once "../../includes/verificationSession.php";
-	require_once "../includes/functions.php";
+	require_once "../../../connexionDB.php";
+	require_once "../../../includes/verificationSession.php";
+	require_once "../../includes/functions.php";
 
 	$libelle_du_module = $_GET['libelle_du_module'];
 	$pole_du_module = $_GET['pole_du_module'];

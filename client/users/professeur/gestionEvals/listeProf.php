@@ -1,6 +1,5 @@
 <?php
-	require_once "../connexionDB.php";
-	require_once "../includes/functions.php";
+	require_once "requiredFiles.php";
 	
 
 	$deptSelected = $_GET['deptSelected'];

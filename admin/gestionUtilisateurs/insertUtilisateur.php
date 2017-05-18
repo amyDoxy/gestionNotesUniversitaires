@@ -1,7 +1,7 @@
 <?php
-	require_once "../connexionDB.php";
-	require_once "../includes/verificationSession.php";
-	require_once "../includes/functions.php";
+	require_once "../../connexionDB.php";
+	require_once "../../includes/verificationSession.php";
+	require_once "../../includes/functions.php";
 
 	$nom_utilisateur = strtolower( $_POST["nom_utilisateur"] );
    	$prenom_utilisateur = strtolower( $_POST["prenom_utilisateur"] );

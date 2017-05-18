@@ -1,8 +1,8 @@
 <?php
-	require_once "./includes/header.html";
-	require_once "./connexionDB.php";
-	require_once "./includes/verificationSession.php";
-	require_once "./includes/functions.php";
+	require_once "../includes/header.html";
+	require_once "../connexionDB.php";
+	require_once "../includes/verificationSession.php";
+	require_once "../includes/functions.php";
 	$data =  get_user_data($conn, $_SESSION['UserData']['username']) ;
 	foreach ($data  as $row) {
 			$nom_utilisateur = $row['nom_utilisateur'];
@@ -21,7 +21,7 @@
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#">UDM <small>Gestion Des Notes</small></a>
 					</div>

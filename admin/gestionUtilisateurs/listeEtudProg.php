@@ -1,6 +1,6 @@
-<?php
-	require_once "../connexionDB.php";
-	require_once "../includes/functions.php";
+../<?php
+	require_once "../../connexionDB.php";
+	require_once "../../includes/functions.php";
 	
 
 	

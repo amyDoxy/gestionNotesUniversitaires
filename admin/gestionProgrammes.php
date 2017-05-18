@@ -1,5 +1,5 @@
 <?php
-	require_once "./includes/header.html";
+	require_once "../includes/header.html";
 ?>
 	<title>Gestion des programmes UDM</title>
 	<script type="text/javascript" src ="./Scripts/functions.js"></script>
