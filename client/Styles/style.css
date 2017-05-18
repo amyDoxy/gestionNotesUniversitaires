@@ -1,0 +1,48 @@
+/* login form css */
+#formLogin {
+  max-width: 430px;
+  padding: 35px;
+  margin: 0 auto;
+}
+#formLogin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+ 
+}
+/*body{
+	background-color: #8067BB !important ;
+	color: #F8F9FD !important;
+}*/
+
+nav{
+  background-color: #3dc8d6;
+}
+section{
+  
+   border: 1px outset #3dc8d6;
+   border-radius: 10px;
+   padding-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 0px;
+   margin-right: 0px;
+   
+
+
+}
+.panel{
+  margin-left: 0px;
+  margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+section {
+  overflow-x: auto;
+}
+.ui-draggable, .ui-droppable {
+  background-position: top;
+}
+td.ui-datepicker-week-end { visibility: hidden; }

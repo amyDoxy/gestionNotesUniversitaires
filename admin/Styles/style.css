@@ -1,0 +1,76 @@
+
+
+
+/* login form css */
+
+
+#formLogin {
+  max-width: 430px;
+  padding: 35px;
+  margin: 0 auto;
+}
+#formLogin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+ 
+}
+/*body{
+	background-color: #8067BB !important ;
+	color: #F8F9FD !important;
+}*/
+nav{
+  background-color: #3dc8d6;
+}
+
+/* Menu vertical pour l'administrateur*/
+.menu-vertical{
+ 
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 5px;
+  
+}
+.menu-vertical li{
+   border-radius: 10px; 
+}
+
+
+
+.menu-vertical a{
+  background-color: #eee;
+  color: blue;
+  display: block;
+   padding: 12px;
+  text-decoration: none;
+ 
+ 
+
+}
+
+.menu-vertical a:hover{
+  background-color: #ccc;
+}
+
+.menu-vertical li.active > a {
+  background-color: #999999;
+  color:white;
+}
+section.section-aside{
+  
+   border: 1px outset #000;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   
+
+
+}
+
+.modal-body {
+  overflow-x: auto;
+}
+
+

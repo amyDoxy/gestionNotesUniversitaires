@@ -1,0 +1,227 @@
+<div class="modal fade" id="ajoutModule">
+		<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Ajouter un module</h4>
+					</div>
+
+					<div class="modal-body">
+
+					<!--Formulaire d'ajout de module-->
+
+						
+									
+							<div class="form-group col-sm-12">
+
+								<label for="faculte">Faculté</label>
+									<select name="faculte" id="faculte" class="form-control" required="required" onchange="getDept()">
+											<!--Liste des facultes-->
+									</select>
+										
+							</div>
+										
+							<!--Code Javascript se trouvant dans functionSemestre.js-->
+							<div class="form-group col-sm-12">
+								<label for="dept">Departement</label>
+									<select name="dept" id="dept" class="form-control" required="required" onchange="getProgr(); getProfModule();">
+										
+									</select>
+
+							</div>
+
+
+							<!--Code Javascript se trouvant dans functionSemestre.js-->
+							<div class="form-group col-sm-12">
+								<label for="intitule_prog">Programme</label>
+
+								<select name="intitule_prog" id="intitule_prog" class="form-control" required="required" onchange="getSemestresProg()">
+											<!--Liste des programmes-->
+								</select>
+								
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="semestre_du_module">Semestre du module</label>
+
+								<select name="semestre_du_module" id="semestre_du_module" class="form-control" required="required" onchange="getUniteEns()">
+											<!--Liste des semestres-->
+								</select>
+								
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="ue_du_module">Unité d'enseignement</label>
+
+								<select name="ue_du_module" id="ue_du_module" class="form-control" onchange="getPoleModules()">
+										
+
+								</select>
+							</div>
+
+
+							<div class="form-group col-sm-12">
+								<label for="pole_du_module">Pole du molule</label>
+
+								<select name="pole_du_module" id="pole_du_module" class="form-control">
+										
+
+								</select>
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="libelle_du_module">Libellé du module</label>
+								<input type="text" name="libelle_du_module" id="libelle_du_module" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="credit_du_module">Crédit du module</label>
+								<input type="number" name="credit_du_module" id="credit_du_module" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="notation_du_cours">Notation du cours</label>
+								<input type="number" name="notation_du_cours" id="notation_du_cours" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="notation_des_tp">Notation des TPs</label>
+								<input type="number" name="notation_des_tp" id="notation_des_tp" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="notation_des_td">Notation des TDs</label>
+								<input type="number" name="notation_des_td" id="notation_des_td" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="notation_des_ds">Notation des Ds</label>
+								<input type="number" name="notation_des_ds" id="notation_des_ds" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="nb_heure_module">Nombre d'heure du module</label>
+								<input type="number" name="nb_heure_module" id="nb_heure_module" class="form-control" required="required">
+							</div>
+
+							<div class="form-group col-sm-12">
+								<label for="dispensateur_du_module">Dispensateur du molule</label>
+
+								<select name="dispensateur_du_module" id="dispensateur_du_module" class="form-control">
+										
+
+								</select>
+							</div>
+
+					
+							
+						</form>
+					</div>
+					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+						<button type="button" class="btn btn-primary" onclick="stockerModule()">Ajouter le module</button>
+					</div>
+				</div>
+		</div>
+</div>
+
+
+ 
+
+
+
+
+
+<!--Modals d'affichage de modules-->    
+
+
+							<div class="modal fade" id="listeModules">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">Affichage des modules par programmes et par semestres</h4>
+										</div>
+										<div class="modal-body">
+
+										
+											<div class="form-group col-sm-12">
+
+												<label for="progr_semestre">Sélectionnez un programme:</label>
+												<select name="progr_semestre" id="progr_semestre" class="form-control" required="required" onchange="getSemestreSousSelect()">
+														<!--Liste des programmes-->
+												</select>
+													
+											</div>
+											<div class="form-group col-sm-12">
+												<div id="affichSemestre"></div>
+											</div>
+											
+											<div id="affichModule"></div>
+										
+											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-print"></span> Importer</button>
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+<!--Modals de modification des modules-->
+
+
+<div class="modal fade" id="editModule" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Mettre à jour</h4>
+      		</div>
+
+         	 <div class="modal-body">
+        	  
+
+      		  <div id='moduleAModifier'></div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;" onclick="updateModule()"><span class="glyphicon glyphicon-ok-sign"></span> Mettre à jour</button>
+      </div>
+    </div> <!-- /.modal-content -->
+    
+  </div> <!-- /.modal-dialog --> 
+      
+ </div>
+
+<!-- Modals de suppression de modules-->    
+
+
+
+
+<div class="modal fade" id="deleteModule" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Suppression</h4>
+      		</div>
+
+         	 <div class="modal-body">
+
+         	 		 <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Êtez-vous que vous voulez supprimer ce module ?</div>
+         	 		 <div id= "moduleASupprimer"></div>
+        	 		
+     		 </div>
+          <div class="modal-footer ">
+        	<button type="button" class="btn btn-warning" onclick="deleteModule()"><span class="glyphicon glyphicon-eye-close"></span> Supprimer</button>
+        	<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
+      	</div>
+       </div><!-- /.modal-content --> 
+    
+  </div> <!-- /.modal-dialog --> 
+     
+</div>
+

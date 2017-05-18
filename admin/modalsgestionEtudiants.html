@@ -1,0 +1,126 @@
+
+
+
+<!--Modals de modification des étudiant-->
+<div class="modal fade" id="modifierEtudiant">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Mettre à jour un étudiant</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div id="modifEtudiant"></div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="editEtudiant" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Mettre à jour</h4>
+      		</div>
+
+         	 <div class="modal-body">
+        	  
+
+      		  <div id='etudiantAModifier'></div>
+      </div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;" onclick="updateEtudiant()"><span class="glyphicon glyphicon-ok-sign"></span> Mettre à jour</button>
+      </div>
+    </div> <!-- /.modal-content -->
+    
+  </div> <!-- /.modal-dialog --> 
+      
+ </div>
+
+
+  <!--Modals de suppression de programmes-->    
+
+
+<div class="modal fade" id="desactiverEtudiant">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Désactiver un étudiant</h4>
+			</div>
+			<div class="modal-body">
+				<div id="desactEtudiant"></div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="desactivate" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Désactivation</h4>
+      		</div>
+
+         	 <div class="modal-body">
+
+         	 		 <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Êtez-vous que vous voulez désactiver cet étudiant ?</div>
+         	 		 <div id= "etudiantADesactiver"></div>
+        	 		
+     		 </div>
+          <div class="modal-footer ">
+        	<button type="button" class="btn btn-warning" onclick="desactivateEtudiant()"><span class="glyphicon glyphicon-eye-close"></span> Désactiver</button>
+        	<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
+      	</div>
+       </div><!-- /.modal-content --> 
+    
+  </div> <!-- /.modal-dialog --> 
+     
+</div>
+
+<!--Modals d'affichage de programmes-->    
+
+
+							<div class="modal fade" id="listeEtudiants">
+								<div class="modal-dialog modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title">Affichage d'étudiants par programmes et par semestres</h4>
+										</div>
+										<div class="modal-body">
+											<div class="form-group col-sm-12">
+
+												<label for="progr_semestre">Sélectionnez un programme:</label>
+												<select name="progr_semestre" id="progr_semestre" class="form-control" required="required" onchange="getSemestresSpecified()">
+														<!--Liste des programmes-->
+												</select>
+													
+											</div>
+											<div class="form-group col-sm-12">
+												<div id="affichSemestre"></div>
+											</div>
+											<div class="form-group col-sm-12">
+												<div id="affichEtudiant"></div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-print"></span> Importer</button>
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>

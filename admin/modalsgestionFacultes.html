@@ -1,0 +1,118 @@
+
+<div class="modal fade" id="ajouterFaculte">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Ajouter une faculté</h4>
+			</div>
+			<div class="modal-body">
+				<form action="" method="POST" class="form-inline" role="form">
+				
+					<div class="form-group">
+						<label for="nom_faculte">Entrez l'intitulé de la nouvelle faculté:
+						 </label>
+						<input type="text" class="form-control" id="nom_faculte" name ="nom_faculte" placeholder="Nom de la faculté" size="40">
+						
+					</div>
+				
+					
+				
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+				<button type="button" class="btn btn-primary" onclick="stockerFaculte()">Créer une faculté</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Modals de modification de departements-->
+<div class="modal fade" id="modifierFaculte">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Mettre à jour une faculté</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div id="modifFaculte"></div>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="editFac" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Mettre à jour</h4>
+      		</div>
+
+         	 <div class="modal-body">
+
+         	 	<div id='faculteAModifier'></div>
+        	 
+      		</div>
+          <div class="modal-footer ">
+        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;" onclick="updateFac()"><span class="glyphicon glyphicon-ok-sign"></span> Mettre à jour</button>
+      </div>
+    </div> <!-- /.modal-content -->
+    
+  </div> <!-- /.modal-dialog --> 
+      
+</div>
+
+
+  <!--Modals de suppression de programmes-->    
+
+
+<div class="modal fade" id="supprimerFac">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Suppression d'une faculté</h4>
+			</div>
+			<div class="modal-body">
+				<div id="suppFac"></div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="deleteFac" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+      <div class="modal-dialog">
+   		 <div class="modal-content">
+         	 <div class="modal-header">
+      		 	 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+       			 <h4 class="modal-title custom_align" id="Heading">Suppression</h4>
+      		</div>
+
+         	 <div class="modal-body">
+
+         	 		 <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Êtez-vous que vous voulez supprimer cet élément ?</div>
+         	 		 <div id= "facASupprimer"></div>
+        	 		
+     		 </div>
+          <div class="modal-footer ">
+        	<button type="button" class="btn btn-success" onclick="deleteFac()"><span class="glyphicon glyphicon-ok-sign"></span> Supprimer</button>
+        	<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Annuler</button>
+      	</div>
+       </div><!-- /.modal-content --> 
+    
+  </div> <!-- /.modal-dialog --> 
+     
+</div>
